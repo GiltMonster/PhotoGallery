@@ -50,7 +50,7 @@ export class PhotoService {
 
     // Easiest way to detect when running on the web:
     // "when the platform is NOT hybrid, do this"
-    if (this.platform.is('hybrid')!) {
+    if (!this.platform.is('hybrid')) {
 
       // Display the photo by reading into base64 format
       for (let photo of this.photos) {
